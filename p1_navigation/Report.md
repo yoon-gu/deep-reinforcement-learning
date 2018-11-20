@@ -25,4 +25,4 @@ I observed history of score among 600 episodes as follows.
 
 ## Future Work
 I need to investigate comparison results with double DQN, dueling DQN, and prioritized experience replay mehtods.
-In addition, 
+In addition, to achieve human-like maodel, CNN should be considered as DQN model.
