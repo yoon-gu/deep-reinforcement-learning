@@ -15,7 +15,7 @@ For this project, I will use the Unity environment which contains 20 identical r
 
 I use Deep Deterministic Policy Gradients (DDPG) method for training the agent in this reacher project. DDPG algorithm is one of schmes for Actor-Critic method. The following diagram shows the model's architectures for Actor-Critic method.
 
-![DDPG Algorithm Diagram](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjMoIKU6L_fAhVB6LwKHWqNAhgQjRx6BAgBEAU&url=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41598-018-29134-x&psig=AOvVaw1Tfaq185pApIkem9wQivU1&ust=1545993326742639)
+![DDPG Algorithm Diagram](https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41598-018-29134-x/MediaObjects/41598_2018_29134_Fig1_HTML.png)
 
 There are two models for this project : Actor and Critic. Here are configurations of them.
 
