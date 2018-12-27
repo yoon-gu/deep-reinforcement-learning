@@ -12,8 +12,8 @@ import torch.optim as optim
 BUFFER_SIZE = int(1e5)  # replay buffer size
 BATCH_SIZE = 128        # minibatch size
 GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR_ACTOR = 1e-5         # learning rate of the actor
+TAU = 1e-2              # for soft update of target parameters
+LR_ACTOR = 5e-5         # learning rate of the actor
 LR_CRITIC = 5e-5        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay
 
@@ -59,9 +59,8 @@ class Agent():
 
         # Learn, if enough samples are available in memory
         if len(self.memory) > BATCH_SIZE:
-            for _ in range(5):
-                experiences = self.memory.sample()
-                self.learn(experiences, GAMMA)
+            experiences = self.memory.sample()
+            self.learn(experiences, GAMMA)
 
     def act(self, state, add_noise=True):
         """Returns actions for given state as per current policy."""
